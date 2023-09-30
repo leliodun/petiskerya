@@ -1,7 +1,5 @@
 @charset "utf8";
 @font-face {
-
-
 font-family: 'petiskerya' ;
 src: url('fontes/Restaurant.otf');
 font-weight: normal;
@@ -13,11 +11,12 @@ font-style: normal;
 :root {
     --cor0: #ebe5c5;
     --cor1: #341606;
-    --cor2: ;
-    --cor3: ;
+    --cor2: yellow;
+    --cor3: #ffff4a;
     --cor4: ;
     --cor5: ;
     --corbranco: #ffffff;
+    --corpreto: black;
   
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'petiskerya';
@@ -37,12 +36,15 @@ body {
 
 header {
     text-align: center;
-    height: 230px;
-    background-color: black;
+    height: 210px;
+    background-color: var(--corpreto);
+    position: sticky;    
+    top: 0;
+    vertical-align: top;
 }
 
 nav {
-    height: 650px;
+    height: 650px;   
 }
 
 nav > h2 {
@@ -61,6 +63,32 @@ nav > h2 > a:hover {
     text-decoration: underline;
 }
 
+table {
+    text-align: center;
+    margin: auto; 
+    margin-top: 50px;
+    border-collapse: separate;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: top;
+    background-color: var(--cor2);
+}
+
+td > h2 > a {
+    font-family: var(--fonte-padrao);
+    text-decoration: none;
+    font-size: 2em;
+    color: var(--cor1);
+}
+
+td > h2 > a:hover {
+    text-decoration: underline;
+}
+
 main {
     text-align: center;
     min-height: 100vh;
@@ -70,17 +98,13 @@ main > h2 {
     margin: 50px;
 }
 
-footer {
-    text-align: center;
-}
-
 .menu {
     height: 1200px;
     width: 900px;
     margin: auto;
     margin-bottom: 100px;
     background-color: var(--cor1);
-    color: yellow;
+    color: var(--cor2);
     border-radius: 10px;
     border: 5px solid white;
     box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.39);
@@ -93,11 +117,8 @@ footer {
     margin: 0px 0px 0px 0px;
     border-radius: 10px 10px 0px 0px;    
     padding: 10px;
-    background-color: black;
-}
-
-
-    
+    background-color: var(--corpreto)
+}    
 
 .menu > h4 {
     font-size: 3em;
@@ -115,29 +136,8 @@ footer {
     margin-bottom: 20px;
 }
 
-
-
-
-
-/*
-#tabuadefrios {
-    
-    background-color: red;
-}
-
-#bruschetta {
-    
-    background-color: blue;
-}
-
-#torradinhas {
-    background-color: green;
-}
-*/
-
 footer {
     height: 60px;
-    background-color: yellow;
-    
-    
+    background-color: var(--cor2);
+    text-align: center;
 }
