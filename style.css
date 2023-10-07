@@ -9,7 +9,7 @@ font-style: normal;
 
 
 :root {
-    --cor0: #ebe5c5;
+    --cor0: #bbb69d;
     --cor1: #341606;
     --cor2: yellow;
     --cor3: #ffff4a;
@@ -32,6 +32,11 @@ font-style: normal;
   
 body {
     background-color: var(--cor0);
+    background-image: url(imagens/patiofill2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
 header {
